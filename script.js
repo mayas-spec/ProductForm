@@ -9,9 +9,6 @@ function showMessage(text, type) {
   messageContainer.innerHTML = `<div class="message ${type}">${text}</div>`;
   const messageEl = messageContainer.querySelector(".message");
 
-  // Trigger animation
-  setTimeout(() => messageEl.classList.add("show"), 10);
-
   // Remove message after 4 seconds
   setTimeout(() => {
     if (messageEl) {
